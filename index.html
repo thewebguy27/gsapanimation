@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Bootstrap/CSS/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class=" wrapper">
+        <div class="flex ">
+            <!-- logo -->
+            <h3>
+                Visit <span class=" color-a">Dubai</span>
+            </h3>
+            <h3 class=" text-center text-uppercase">
+                City of life
+            </h3>
+                <input class=" form-control mr-3 col-4" placeholder="Search...">          
+        </div>  
+          <!--navigation-->
+          <nav class="main-nav mt-5">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li >
+                   <a href="about.html">About Us</a>
+               </li>
+               <li >
+                   <a href="famousplaces.html">Famous Landmarks</a>
+               </li>
+               <li >
+                <a href="activities.html">Interesting Activites</a>
+            </li>
+            <li>
+                <a href="feedback.html">Feedback and review</a>
+            </li> 
+            <li >
+                <a href="contact.html">Contact</a>
+            </li>
+            
+            
+            </ul>
+        </nav>
+        <!-- end nav -->
+         <!--top container-->
+         <section class="top-container">
+            <header class="showcase">
+                <h1 class="anim1">Visit <span class=" color-a">Dubai</span> </h1>
+                <p class="anim1">
+                   No matter how many times you visit dubai you will always find something new
+                </p>
+               
+            </header>
+            <div class="buttons">
+                <nav class="nav-link-2">
+                    <ul>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li >
+                           <a href="#">Mall</a>
+                       </li>
+                       <li >
+                           <a href="#">Safari</a>
+                       </li>
+                       <li >
+                        <a href="#">Beaches</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li> 
+                    <li >
+                        <a href="#">Activites</a>
+                    </li>
+                    
+                    
+                    </ul>
+                </nav>
+            </div>
+            
+        </section>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js" integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA==" crossorigin="anonymous"></script>
+<script>
+   
+   /* gsap.from('.anim1',{
+        opacity:0,duration: 2.5, ease: "power2.out", x: -500,stagger:0.6
+    });
+    gsap.from('.top-box-a',{
+        duration:1,x:100,opacity:0,delay:1.4
+    });
+  
+    gsap.from('.top-box-b',{
+        duration:1,x:100,opacity:0,delay:1.6
+    });
+    */
+    var t1=gsap.timeline({default:{duration:1}})
+    t1.from('.anim1',{x:-500,stagger:.6,opacity:0,ease:"power2.out",duration:2.0}).from(".buttons",{opacity:0});
+</script>
+</html>
